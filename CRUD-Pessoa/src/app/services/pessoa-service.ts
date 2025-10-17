@@ -34,6 +34,7 @@ export class PessoaService {
     if(oldPessoa != undefined) {
       oldPessoa.nome = newPessoa.nome;
       oldPessoa.idade = newPessoa.idade;
+      oldPessoa.dataNasc = newPessoa.dataNasc;
 
       localStorage[LS_CHAVE] = JSON.stringify(pessoas);
     }
